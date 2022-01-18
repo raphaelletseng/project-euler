@@ -2,9 +2,6 @@
 
 #What is the largest prime factor of the number 600851475143 ?
 
-
-
-
 def isPrime(p):
     return all(p%i for i in range (2, p-1))
 
