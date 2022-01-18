@@ -1,2 +1,5 @@
 # project-euler
-Project Euler Code
+A space to put python solutions to Project Euler
+
+
+
