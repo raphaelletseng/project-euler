@@ -10,9 +10,10 @@ def prime(p):
 
 #print(prime(600851475143))
 
-def findPrimes(p):
+def solution3():
+    p = 600851475143
     primes = []
-    for i in range(2, p+1):
+    for i in range(2, 6859): #should be p+1?
         if (p%i == 0):
             count = 1
             for j in range(2, (i//2 + 1)):
@@ -20,12 +21,11 @@ def findPrimes(p):
                     count = 0
                     break
             if (count == 1):
-                print(i)
                 primes.append(i)
-    return primes[len(primes)-1]
+    return primes[len(primes) -1]
 
 
 
-print(findPrimes(600851475143))
+print(solution3())
 
 #ANS: 6857

@@ -3,7 +3,7 @@
 
 #Find the largest palindrome made from the product of two 3-digit numbers.
 
-max = 500005
+
 
 def isPal(p):
     num = [int(x) for x in str(p)]
@@ -13,13 +13,16 @@ def isPal(p):
         else: point+=1
     return True
 
-for n1 in range(100, 1000):
-    for n2 in range (100, 1000):
-        sum = n1*n2
-        if(isPal(sum) and sum > max):
-            max = sum
-        
-print(max)
+def solution4():
+    max = 500005
+    for n1 in range(100, 1000):
+        for n2 in range (100, 1000):
+            sum = n1*n2
+            if(isPal(sum) and sum > max):
+                max = sum
+            
+    return(max)
 
+print(solution4())
 #ANS: 906609
 

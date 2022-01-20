@@ -6,18 +6,19 @@
 #By considering the terms in the Fibonacci sequence whose values do not exceed four million, 
 # find the sum of the even-valued terms.
 
-n0 = 1
-n1 = 2 
-n2 = n0 + n1 
+def solution2():
+    n0 = 1
+    n1 = 2 
+    n2 = n0 + n1 
 
-sum = 2
+    sum = 2
 
-while (n2 < 4000000):
-    n0 = n1
-    n1 = n2
-    n2 = n0 + n1
-    if (n2 % 2 == 0): sum = sum + n2
+    while (n2 < 4000000):
+        n0 = n1
+        n1 = n2
+        n2 = n0 + n1
+        if (n2 % 2 == 0): sum = sum + n2
 
-print (sum)
-
+    return (sum)
+print(solution2())
 # ANS: 4613732 
