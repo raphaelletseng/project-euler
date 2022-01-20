@@ -10,13 +10,14 @@ def isPythagTrip(a, b, c):
 def equals1000 (a,b,c):
     if ((a + b + c) == 1000) : return True
 
+def solution9():
+    for a in range(150, 800):
+        for b in range (150, 800):
+            for c in range (150, 800):
+                if( isPythagTrip (a,b,c)):
+                    if (equals1000 (a,b,c)):
+                        return(a*b*c)
 
-for a in range(150, 800):
-    for b in range (150, 800):
-        for c in range (150, 800):
-            if( isPythagTrip (a,b,c)):
-                if (equals1000 (a,b,c)):
-                    print(a*b*c)
-
+#print(solution10())
 
 #ANS: 31875000

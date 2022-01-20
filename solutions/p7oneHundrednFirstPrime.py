@@ -2,7 +2,7 @@
 
 #What is the 10 001st prime number?
 
-def genPrime(index):
+def solution7(index):
     primes = [2]
     start = 3
     while(len(primes) < index):
@@ -16,7 +16,7 @@ def genPrime(index):
     #return primes       
     return primes[len(primes)-1]
 
-print(genPrime(10001))
+#print(genPrime(10001))
     
 #ANS: 104743
 

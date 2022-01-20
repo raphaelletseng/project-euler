@@ -50,16 +50,19 @@ def isPrime(n):
                             f = f+6
                     return True
 
-limit = 2000000
-sum = 5
-n = 5
-while (n<= limit):
-    if isPrime(n): sum = sum+n 
-    n = n+2
-    if (n<= limit and isPrime(n)): sum = sum +n 
-    n = n+4
+def solution10():
+    limit = 2000000
+    sum = 5
+    n = 5
 
-print(sum)
+    while (n<= limit):
+        if isPrime(n): sum = sum+n 
+        n = n+2
+        if (n<= limit and isPrime(n)): sum = sum +n 
+        n = n+4
+
+    return(sum)
+print(solution10())
 
 #wow this was SO much better
 
