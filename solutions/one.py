@@ -7,3 +7,5 @@ def solution():
     return(sum)
 
 #ANS: 233168
+
+print(solution())

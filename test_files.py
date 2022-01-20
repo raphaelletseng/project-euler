@@ -6,6 +6,6 @@ from solutions.one import solution
 
 
 def test_all():
-    assert solution == 233168
+    assert solution() == 233168
     #for key, val in SOLUTIONS_DICT.items():
      #   assert key.solution == val
