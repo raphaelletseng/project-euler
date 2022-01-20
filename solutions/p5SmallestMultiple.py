@@ -2,7 +2,7 @@
 
 #What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20
 
-def isDivisible(x):
+def solution5(x):
     set = False
     while (set != True):
         for i in range(11, 21):
@@ -14,7 +14,7 @@ def isDivisible(x):
         x+=1 
     return x-1
 
-print(isDivisible(232792560))
+#print(solution5(232792560))
 
 #if it's divisible by 20, it's divisible by 10, 5, 2
 # 19, 18(9, 6, 3), 17, 16(8, 4), 15, 14(7), 13, 12, 11, 

@@ -20,7 +20,10 @@ def squareOfSums(x):
     return total
 #print(squareOfSums(10))
 
-diff = squareOfSums(100) - sumOfSquares(100)
-print(diff)
+def solution6():
+    diff = squareOfSums(100) - sumOfSquares(100)
+    return(diff)
 
+
+print(solution6())
 #ANS: 25164150
